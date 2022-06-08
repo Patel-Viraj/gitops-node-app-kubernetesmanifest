@@ -23,6 +23,7 @@ spec:
         name: nodedemo
         resources: {}
 status: {}
+
 ---
 apiVersion: v1
 kind: Service
