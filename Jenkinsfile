@@ -10,14 +10,9 @@ pipeline{
                     sh "cat deployment.yaml"
                     sh "git add ."
                     sh "git commit -m 'Done by Jenkins Job changemanifest'"
-                    sh "git push https://${GIT_USERNAME}:${GIT_PASSWORD}@github.com/${GIT_USERNAME}/kubernetesmanifest.git HEAD:master"
+                    sh "git push https://${GIT_USERNAME}:${GIT_PASSWORD}@github.com/${GIT_USERNAME}/gitops-node-app-kubernetesmanifest.git HEAD:master"
             }
         }
-        stage('Deploy Docker Image') {
-            steps {
-                sh "echo staring deploy the image"
 
-            }
-        }
     }
 }
