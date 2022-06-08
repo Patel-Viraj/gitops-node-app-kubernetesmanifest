@@ -18,7 +18,7 @@ spec:
         app: nodedemo
     spec:
       containers:
-      - image: viraj5132/gitops:16
+      - image: viraj5132/gitops:17
         imagePullPolicy: Always
         name: nodedemo
         resources: {}
